@@ -7,20 +7,22 @@
     <x>0</x>
     <y>0</y>
     <width>1920</width>
-    <height>1080</height>
+    <height>1081</height>
    </rect>
   </property>
   <property name="font">
    <font>
     <family>Open Sans</family>
+    <weight>50</weight>
+    <bold>false</bold>
    </font>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">
-	background-color: rgb(61, 56, 70);
+   <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(61, 56, 70);
 </string>
   </property>
   <widget class="QWidget" name="centralwidget">
@@ -29,12 +31,13 @@
      <rect>
       <x>15</x>
       <y>70</y>
-      <width>381</width>
+      <width>431</width>
       <height>450</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(119, 118, 123);</string>
+     <string notr="true">background-color: rgb(119, 118, 123);
+color: rgb(255, 255, 255);</string>
     </property>
    </widget>
    <widget class="QTableView" name="tableView_2">
@@ -42,25 +45,27 @@
      <rect>
       <x>15</x>
       <y>600</y>
-      <width>381</width>
-      <height>450</height>
+      <width>431</width>
+      <height>431</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(119, 118, 123);</string>
+     <string notr="true">background-color: rgb(119, 118, 123);
+color: rgb(255, 255, 255);</string>
     </property>
    </widget>
    <widget class="QTableView" name="tableView_3">
     <property name="geometry">
      <rect>
-      <x>980</x>
+      <x>810</x>
       <y>70</y>
-      <width>501</width>
-      <height>981</height>
+      <width>751</width>
+      <height>961</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(119, 118, 123);</string>
+     <string notr="true">background-color: rgb(119, 118, 123);
+color: rgb(255, 255, 255);</string>
     </property>
    </widget>
    <widget class="QLabel" name="label">
@@ -164,7 +169,7 @@ QPushButton::hover{
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>980</x>
+      <x>810</x>
       <y>30</y>
       <width>371</width>
       <height>41</height>
@@ -224,7 +229,7 @@ QPushButton::hover{
    <widget class="QLabel" name="label_6">
     <property name="geometry">
      <rect>
-      <x>1170</x>
+      <x>1000</x>
       <y>30</y>
       <width>41</width>
       <height>41</height>
@@ -256,10 +261,10 @@ QPushButton::hover{
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
-      <x>410</x>
+      <x>460</x>
       <y>69</y>
       <width>131</width>
-      <height>161</height>
+      <height>211</height>
      </rect>
     </property>
     <property name="title">
@@ -274,12 +279,17 @@ QPushButton::hover{
        <height>31</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
      <property name="cursor">
       <cursorShape>PointingHandCursor</cursorShape>
      </property>
      <property name="styleSheet">
       <string notr="true">QPushButton{
-	
 	background-color: rgb(36, 31, 49);
 	border: none;
 	color: white;
@@ -289,7 +299,7 @@ QPushButton::hover{
 }</string>
      </property>
      <property name="text">
-      <string>Добавить &gt;</string>
+      <string>Добавить</string>
      </property>
     </widget>
     <widget class="QPushButton" name="change">
@@ -301,12 +311,17 @@ QPushButton::hover{
        <height>31</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
      <property name="cursor">
       <cursorShape>PointingHandCursor</cursorShape>
      </property>
      <property name="styleSheet">
       <string notr="true">QPushButton{
-	
 	background-color: rgb(36, 31, 49);
 	border: none;
 	color: white;
@@ -316,10 +331,10 @@ QPushButton::hover{
 }</string>
      </property>
      <property name="text">
-      <string>Изменить &gt;</string>
+      <string>Изменить</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="delete_2">
+    <widget class="QPushButton" name="delete_btn">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -327,6 +342,12 @@ QPushButton::hover{
        <width>111</width>
        <height>31</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
      </property>
      <property name="cursor">
       <cursorShape>PointingHandCursor</cursorShape>
@@ -346,11 +367,44 @@ QPushButton::hover{
       <string>Удалить</string>
      </property>
     </widget>
+    <widget class="QPushButton" name="delete_btn_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>170</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	
+	background-color: rgb(36, 31, 49);
+	border: none;
+	color: white;
+}
+QPushButton::hover{
+	background-color: rgb(119, 118, 123);
+}</string>
+     </property>
+     <property name="text">
+      <string>Отчёт</string>
+     </property>
+    </widget>
    </widget>
    <widget class="QGroupBox" name="groupBox_2">
     <property name="geometry">
      <rect>
-      <x>420</x>
+      <x>460</x>
       <y>600</y>
       <width>131</width>
       <height>161</height>
@@ -368,9 +422,17 @@ QPushButton::hover{
        <height>31</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
      <property name="styleSheet">
       <string notr="true">QPushButton{
-	
 	background-color: rgb(36, 31, 49);
 	border: none;
 	color: white;
@@ -380,7 +442,7 @@ QPushButton::hover{
 }</string>
      </property>
      <property name="text">
-      <string>Добавить &gt;</string>
+      <string>Добавить</string>
      </property>
     </widget>
     <widget class="QPushButton" name="change_2">
@@ -392,9 +454,17 @@ QPushButton::hover{
        <height>31</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
      <property name="styleSheet">
       <string notr="true">QPushButton{
-	
 	background-color: rgb(36, 31, 49);
 	border: none;
 	color: white;
@@ -404,10 +474,10 @@ QPushButton::hover{
 }</string>
      </property>
      <property name="text">
-      <string>Изменить &gt;</string>
+      <string>Изменить</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="delete_3">
+    <widget class="QPushButton" name="delete_btn_2">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -415,6 +485,15 @@ QPushButton::hover{
        <width>111</width>
        <height>31</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
      </property>
      <property name="styleSheet">
       <string notr="true">QPushButton{
@@ -435,7 +514,7 @@ QPushButton::hover{
    <widget class="QGroupBox" name="groupBox_3">
     <property name="geometry">
      <rect>
-      <x>1510</x>
+      <x>1570</x>
       <y>70</y>
       <width>131</width>
       <height>161</height>
@@ -453,9 +532,17 @@ QPushButton::hover{
        <height>31</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
      <property name="styleSheet">
       <string notr="true">QPushButton{
-	
 	background-color: rgb(36, 31, 49);
 	border: none;
 	color: white;
@@ -465,7 +552,7 @@ QPushButton::hover{
 }</string>
      </property>
      <property name="text">
-      <string>Добавить &gt;</string>
+      <string>Добавить</string>
      </property>
     </widget>
     <widget class="QPushButton" name="change_3">
@@ -477,9 +564,17 @@ QPushButton::hover{
        <height>31</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
      <property name="styleSheet">
       <string notr="true">QPushButton{
-	
 	background-color: rgb(36, 31, 49);
 	border: none;
 	color: white;
@@ -489,10 +584,10 @@ QPushButton::hover{
 }</string>
      </property>
      <property name="text">
-      <string>Изменить &gt;</string>
+      <string>Изменить</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="delete_4">
+    <widget class="QPushButton" name="delete_btn_3">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -500,6 +595,15 @@ QPushButton::hover{
        <width>111</width>
        <height>31</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
      </property>
      <property name="styleSheet">
       <string notr="true">QPushButton{
@@ -520,16 +624,23 @@ QPushButton::hover{
    <widget class="QGroupBox" name="groupBox_create">
     <property name="geometry">
      <rect>
-      <x>540</x>
-      <y>90</y>
+      <x>590</x>
+      <y>89</y>
       <width>191</width>
       <height>231</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
     </property>
     <property name="styleSheet">
      <string notr="true">QGroupBox{
 	background-color: rgb(36, 31, 49);
 	border: none;
+	color: white;
 }</string>
     </property>
     <property name="title">
@@ -583,6 +694,15 @@ QPushButton::hover{
        <height>26</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
      <property name="styleSheet">
       <string notr="true">QPushButton{
 	
@@ -609,6 +729,15 @@ QPushButton::hover{
        <width>80</width>
        <height>26</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
      </property>
      <property name="styleSheet">
       <string notr="true">QPushButton{
@@ -637,6 +766,12 @@ QPushButton::hover{
        <height>18</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
 background-color: rgba(255, 255, 255, 0);</string>
@@ -653,6 +788,12 @@ background-color: rgba(255, 255, 255, 0);</string>
        <width>59</width>
        <height>18</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
      </property>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
@@ -671,6 +812,12 @@ background-color: rgba(255, 255, 255, 0);</string>
        <height>18</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);
 background-color: rgba(255, 255, 255, 0);</string>
@@ -683,8 +830,8 @@ background-color: rgba(255, 255, 255, 0);</string>
    <widget class="QGroupBox" name="groupBox_change">
     <property name="geometry">
      <rect>
-      <x>540</x>
-      <y>140</y>
+      <x>590</x>
+      <y>139</y>
       <width>191</width>
       <height>231</height>
      </rect>
@@ -754,6 +901,15 @@ QPushButton{
        <height>26</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
      <property name="styleSheet">
       <string notr="true">QPushButton{
 	
@@ -778,6 +934,15 @@ QPushButton::hover{
        <width>80</width>
        <height>26</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
      </property>
      <property name="styleSheet">
       <string notr="true">QPushButton{
@@ -804,6 +969,12 @@ QPushButton::hover{
        <height>18</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);</string>
      </property>
@@ -820,6 +991,12 @@ QPushButton::hover{
        <height>18</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);</string>
      </property>
@@ -832,9 +1009,15 @@ QPushButton::hover{
       <rect>
        <x>10</x>
        <y>130</y>
-       <width>111</width>
+       <width>131</width>
        <height>18</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
      </property>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);</string>
@@ -847,7 +1030,7 @@ QPushButton::hover{
    <widget class="QGroupBox" name="groupBox_create_2">
     <property name="geometry">
      <rect>
-      <x>550</x>
+      <x>590</x>
       <y>620</y>
       <width>191</width>
       <height>231</height>
@@ -918,6 +1101,15 @@ QPushButton{
        <height>26</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
      <property name="styleSheet">
       <string notr="true">QPushButton{
 	
@@ -941,6 +1133,15 @@ QPushButton::hover{
        <width>80</width>
        <height>26</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
      </property>
      <property name="styleSheet">
       <string notr="true">QPushButton{
@@ -966,6 +1167,12 @@ QPushButton::hover{
        <height>18</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);</string>
      </property>
@@ -981,6 +1188,12 @@ QPushButton::hover{
        <width>71</width>
        <height>18</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
      </property>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);</string>
@@ -998,6 +1211,12 @@ QPushButton::hover{
        <height>18</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);</string>
      </property>
@@ -1009,7 +1228,7 @@ QPushButton::hover{
    <widget class="QGroupBox" name="groupBox_change_2">
     <property name="geometry">
      <rect>
-      <x>550</x>
+      <x>590</x>
       <y>670</y>
       <width>191</width>
       <height>231</height>
@@ -1080,6 +1299,15 @@ QPushButton{
        <height>26</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
      <property name="styleSheet">
       <string notr="true">QPushButton{
 	
@@ -1103,6 +1331,15 @@ QPushButton::hover{
        <width>80</width>
        <height>26</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
      </property>
      <property name="styleSheet">
       <string notr="true">QPushButton{
@@ -1128,6 +1365,12 @@ QPushButton::hover{
        <height>18</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);</string>
      </property>
@@ -1144,6 +1387,12 @@ QPushButton::hover{
        <height>18</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);</string>
      </property>
@@ -1156,9 +1405,15 @@ QPushButton::hover{
       <rect>
        <x>10</x>
        <y>130</y>
-       <width>131</width>
+       <width>141</width>
        <height>18</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
      </property>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);</string>
@@ -1171,7 +1426,7 @@ QPushButton::hover{
    <widget class="QGroupBox" name="groupBox_create_3">
     <property name="geometry">
      <rect>
-      <x>1640</x>
+      <x>1700</x>
       <y>90</y>
       <width>201</width>
       <height>181</height>
@@ -1229,6 +1484,15 @@ QPushButton{
        <height>26</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
      <property name="styleSheet">
       <string notr="true">QPushButton{
 	border: none;
@@ -1251,6 +1515,15 @@ QPushButton::hover{
        <height>26</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
      <property name="styleSheet">
       <string notr="true">QPushButton{
 
@@ -1268,11 +1541,17 @@ QPushButton::hover{
     <widget class="QLabel" name="label_26">
      <property name="geometry">
       <rect>
-       <x>10</x>
+       <x>0</x>
        <y>10</y>
-       <width>191</width>
+       <width>201</width>
        <height>18</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
      </property>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);</string>
@@ -1290,6 +1569,12 @@ QPushButton::hover{
        <height>18</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);</string>
      </property>
@@ -1301,7 +1586,7 @@ QPushButton::hover{
    <widget class="QGroupBox" name="groupBox_change_3">
     <property name="geometry">
      <rect>
-      <x>1640</x>
+      <x>1700</x>
       <y>140</y>
       <width>201</width>
       <height>181</height>
@@ -1359,6 +1644,15 @@ QPushButton{
        <height>26</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
      <property name="styleSheet">
       <string notr="true">QPushButton{
 	border: none;
@@ -1381,6 +1675,15 @@ QPushButton::hover{
        <height>26</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
      <property name="styleSheet">
       <string notr="true">QPushButton{
 
@@ -1398,11 +1701,17 @@ QPushButton::hover{
     <widget class="QLabel" name="label_28">
      <property name="geometry">
       <rect>
-       <x>10</x>
+       <x>0</x>
        <y>10</y>
-       <width>191</width>
+       <width>201</width>
        <height>18</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
      </property>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);</string>
@@ -1416,9 +1725,15 @@ QPushButton::hover{
       <rect>
        <x>10</x>
        <y>70</y>
-       <width>171</width>
+       <width>181</width>
        <height>18</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
      </property>
      <property name="styleSheet">
       <string notr="true">color: rgb(255, 255, 255);</string>
