@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
+    <width>961</width>
     <height>600</height>
    </rect>
   </property>
@@ -20,7 +20,7 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>150</x>
+      <x>240</x>
       <y>20</y>
       <width>481</width>
       <height>41</height>
@@ -48,7 +48,7 @@
      <rect>
       <x>10</x>
       <y>90</y>
-      <width>781</width>
+      <width>941</width>
       <height>321</height>
      </rect>
     </property>
@@ -66,7 +66,7 @@
    <widget class="QComboBox" name="start_date">
     <property name="geometry">
      <rect>
-      <x>8</x>
+      <x>18</x>
       <y>450</y>
       <width>131</width>
       <height>26</height>
@@ -101,7 +101,7 @@ QComboBox QListView{
    <widget class="QComboBox" name="end_date">
     <property name="geometry">
      <rect>
-      <x>160</x>
+      <x>170</x>
       <y>450</y>
       <width>131</width>
       <height>26</height>
@@ -136,7 +136,7 @@ QComboBox QListView{
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>140</x>
+      <x>150</x>
       <y>454</y>
       <width>21</width>
       <height>16</height>
@@ -162,7 +162,7 @@ QComboBox QListView{
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>20</x>
       <y>430</y>
       <width>131</width>
       <height>20</height>
@@ -188,7 +188,7 @@ QComboBox QListView{
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>160</x>
+      <x>170</x>
       <y>430</y>
       <width>131</width>
       <height>20</height>
@@ -214,7 +214,7 @@ QComboBox QListView{
    <widget class="QPushButton" name="view_table">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>20</x>
       <y>490</y>
       <width>281</width>
       <height>31</height>
@@ -249,7 +249,7 @@ QPushButton::hover{
    <widget class="QPushButton" name="start_printer">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>20</x>
       <y>540</y>
       <width>281</width>
       <height>31</height>
@@ -284,9 +284,9 @@ QPushButton::hover{
    <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
-      <x>300</x>
+      <x>420</x>
       <y>410</y>
-      <width>481</width>
+      <width>471</width>
       <height>181</height>
      </rect>
     </property>
@@ -300,8 +300,8 @@ QPushButton::hover{
    <widget class="QPushButton" name="exit">
     <property name="geometry">
      <rect>
-      <x>770</x>
-      <y>0</y>
+      <x>920</x>
+      <y>10</y>
       <width>21</width>
       <height>20</height>
      </rect>
@@ -332,7 +332,7 @@ QPushButton::hover{
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>801</width>
+      <width>961</width>
       <height>601</height>
      </rect>
     </property>

@@ -4,7 +4,7 @@ from PyQt5.QtGui import *
 from PyQt5.QtSql import *
 from design.LoginWindow import Ui_MainWindow
 from bin.db import Database
-from bin.App import MainWindow
+from App import MainWindow
 import sys
 
 class LoginWindow(Ui_MainWindow):
@@ -23,12 +23,15 @@ class LoginWindow(Ui_MainWindow):
         query.bindValue(":username", username)
         query.bindValue(":password", password)
         if not query.exec():
-            print("Query Error:", query.lastError().text())
+            QMessageBox.critical(self, "Ошибка!" "Неверный логин или пароль!")
             return False
         if query.next():
-            self.main = MainWindow()
+            self.main = MainWindow(username)
             self.main.show()
             self.close()
+        else:
+            QMessageBox.critical(self, "Ошибка!", "Неверный логин или пароль!")
+
         
     def mousePressEvent(self, event):
         self.offset = event.pos()

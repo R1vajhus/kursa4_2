@@ -31,7 +31,7 @@ background-color: 	#37393D;
      <rect>
       <x>15</x>
       <y>70</y>
-      <width>431</width>
+      <width>701</width>
       <height>450</height>
      </rect>
     </property>
@@ -51,7 +51,7 @@ background-color: 	#37393D;
      <rect>
       <x>15</x>
       <y>600</y>
-      <width>431</width>
+      <width>701</width>
       <height>431</height>
      </rect>
     </property>
@@ -69,9 +69,9 @@ background-color: 	#37393D;
    <widget class="QTableView" name="tableView_3">
     <property name="geometry">
      <rect>
-      <x>810</x>
+      <x>1030</x>
       <y>70</y>
-      <width>751</width>
+      <width>661</width>
       <height>961</height>
      </rect>
     </property>
@@ -187,7 +187,7 @@ QPushButton::hover{
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>810</x>
+      <x>1030</x>
       <y>30</y>
       <width>371</width>
       <height>41</height>
@@ -247,7 +247,7 @@ QPushButton::hover{
    <widget class="QLabel" name="label_6">
     <property name="geometry">
      <rect>
-      <x>1000</x>
+      <x>1230</x>
       <y>30</y>
       <width>41</width>
       <height>41</height>
@@ -279,7 +279,7 @@ QPushButton::hover{
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
-      <x>460</x>
+      <x>720</x>
       <y>69</y>
       <width>131</width>
       <height>211</height>
@@ -399,7 +399,7 @@ QPushButton::hover{
    <widget class="QGroupBox" name="groupBox_2">
     <property name="geometry">
      <rect>
-      <x>460</x>
+      <x>720</x>
       <y>600</y>
       <width>131</width>
       <height>161</height>
@@ -494,7 +494,7 @@ QPushButton::hover{
    <widget class="QGroupBox" name="groupBox_3">
     <property name="geometry">
      <rect>
-      <x>1570</x>
+      <x>1710</x>
       <y>70</y>
       <width>131</width>
       <height>161</height>
@@ -589,8 +589,8 @@ QPushButton::hover{
    <widget class="QGroupBox" name="groupBox_create">
     <property name="geometry">
      <rect>
-      <x>590</x>
-      <y>70</y>
+      <x>720</x>
+      <y>280</y>
       <width>191</width>
       <height>231</height>
      </rect>
@@ -713,7 +713,7 @@ QPushButton::hover{
       <rect>
        <x>10</x>
        <y>10</y>
-       <width>59</width>
+       <width>171</width>
        <height>18</height>
       </rect>
      </property>
@@ -728,7 +728,7 @@ QPushButton::hover{
 background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
-      <string>ИНН</string>
+      <string>ИНН гражданина</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_9">
@@ -759,7 +759,7 @@ background-color: rgba(255, 255, 255, 0);</string>
       <rect>
        <x>10</x>
        <y>130</y>
-       <width>111</width>
+       <width>131</width>
        <height>18</height>
       </rect>
      </property>
@@ -781,8 +781,8 @@ background-color: rgba(255, 255, 255, 0);</string>
    <widget class="QGroupBox" name="groupBox_change">
     <property name="geometry">
      <rect>
-      <x>590</x>
-      <y>70</y>
+      <x>720</x>
+      <y>280</y>
       <width>191</width>
       <height>231</height>
      </rect>
@@ -902,7 +902,7 @@ QPushButton::hover{
       <rect>
        <x>10</x>
        <y>10</y>
-       <width>59</width>
+       <width>171</width>
        <height>18</height>
       </rect>
      </property>
@@ -916,7 +916,7 @@ QPushButton::hover{
       <string notr="true">color: rgb(255, 255, 255);</string>
      </property>
      <property name="text">
-      <string>ИНН</string>
+      <string>ИНН гражданина</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_18">
@@ -967,8 +967,8 @@ QPushButton::hover{
    <widget class="QGroupBox" name="groupBox_create_2">
     <property name="geometry">
      <rect>
-      <x>590</x>
-      <y>600</y>
+      <x>720</x>
+      <y>760</y>
       <width>191</width>
       <height>231</height>
      </rect>
@@ -1107,7 +1107,7 @@ QPushButton::hover{
       <rect>
        <x>10</x>
        <y>10</y>
-       <width>59</width>
+       <width>171</width>
        <height>18</height>
       </rect>
      </property>
@@ -1121,7 +1121,7 @@ QPushButton::hover{
       <string notr="true">color: rgb(255, 255, 255);</string>
      </property>
      <property name="text">
-      <string>ИНН</string>
+      <string>ИНН предприятия</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_21">
@@ -1129,7 +1129,7 @@ QPushButton::hover{
       <rect>
        <x>10</x>
        <y>70</y>
-       <width>71</width>
+       <width>171</width>
        <height>18</height>
       </rect>
      </property>
@@ -1143,7 +1143,7 @@ QPushButton::hover{
       <string notr="true">color: rgb(255, 255, 255);</string>
      </property>
      <property name="text">
-      <string>Название</string>
+      <string>Название предприятия</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_22">
@@ -1151,7 +1151,7 @@ QPushButton::hover{
       <rect>
        <x>10</x>
        <y>130</y>
-       <width>131</width>
+       <width>141</width>
        <height>18</height>
       </rect>
      </property>
@@ -1172,8 +1172,8 @@ QPushButton::hover{
    <widget class="QGroupBox" name="groupBox_change_2">
     <property name="geometry">
      <rect>
-      <x>590</x>
-      <y>600</y>
+      <x>720</x>
+      <y>760</y>
       <width>191</width>
       <height>231</height>
      </rect>
@@ -1312,7 +1312,7 @@ QPushButton::hover{
       <rect>
        <x>10</x>
        <y>10</y>
-       <width>59</width>
+       <width>171</width>
        <height>18</height>
       </rect>
      </property>
@@ -1326,7 +1326,7 @@ QPushButton::hover{
       <string notr="true">color: rgb(255, 255, 255);</string>
      </property>
      <property name="text">
-      <string>ИНН</string>
+      <string>ИНН предприятия</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_24">
@@ -1334,7 +1334,7 @@ QPushButton::hover{
       <rect>
        <x>10</x>
        <y>70</y>
-       <width>71</width>
+       <width>171</width>
        <height>18</height>
       </rect>
      </property>
@@ -1348,7 +1348,7 @@ QPushButton::hover{
       <string notr="true">color: rgb(255, 255, 255);</string>
      </property>
      <property name="text">
-      <string>Название</string>
+      <string>Название предприятия</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_25">
@@ -1377,10 +1377,10 @@ QPushButton::hover{
    <widget class="QGroupBox" name="groupBox_create_3">
     <property name="geometry">
      <rect>
-      <x>1700</x>
-      <y>70</y>
+      <x>1710</x>
+      <y>230</y>
       <width>201</width>
-      <height>231</height>
+      <height>311</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -1407,24 +1407,11 @@ QPushButton::hover{
     <property name="title">
      <string/>
     </property>
-    <widget class="QLineEdit" name="year_tax">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>30</y>
-       <width>181</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">color: rgb(255, 255, 255);</string>
-     </property>
-    </widget>
     <widget class="QLineEdit" name="year_quta">
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>90</y>
+       <y>40</y>
        <width>181</width>
        <height>25</height>
       </rect>
@@ -1437,7 +1424,7 @@ QPushButton::hover{
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>180</y>
+       <y>260</y>
        <width>80</width>
        <height>26</height>
       </rect>
@@ -1459,7 +1446,7 @@ QPushButton::hover{
      <property name="geometry">
       <rect>
        <x>110</x>
-       <y>180</y>
+       <y>260</y>
        <width>80</width>
        <height>26</height>
       </rect>
@@ -1477,33 +1464,11 @@ QPushButton::hover{
       <string>Отмена</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_26">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>10</y>
-       <width>201</width>
-       <height>18</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">color: rgb(255, 255, 255);</string>
-     </property>
-     <property name="text">
-      <string>Годовой начисленный налог</string>
-     </property>
-    </widget>
     <widget class="QLabel" name="label_27">
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>70</y>
+       <y>10</y>
        <width>171</width>
        <height>18</height>
       </rect>
@@ -1525,7 +1490,7 @@ QPushButton::hover{
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>140</y>
+       <y>220</y>
        <width>181</width>
        <height>25</height>
       </rect>
@@ -1549,7 +1514,7 @@ QComboBox::on{
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>120</y>
+       <y>195</y>
        <width>171</width>
        <height>18</height>
       </rect>
@@ -1567,14 +1532,87 @@ QComboBox::on{
       <string>Год</string>
      </property>
     </widget>
+    <widget class="QLabel" name="label_33">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>70</y>
+       <width>201</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Годовой исчисленный налог</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="year_tax">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>95</y>
+       <width>181</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="sell_tax">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>160</y>
+       <width>181</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_35">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>135</y>
+       <width>181</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Оплаченные налоги</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
    </widget>
    <widget class="QGroupBox" name="groupBox_change_3">
     <property name="geometry">
      <rect>
-      <x>1700</x>
-      <y>70</y>
+      <x>1710</x>
+      <y>230</y>
       <width>201</width>
-      <height>231</height>
+      <height>311</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -1601,24 +1639,11 @@ QPushButton::hover{
     <property name="title">
      <string/>
     </property>
-    <widget class="QLineEdit" name="year_tax_change">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>30</y>
-       <width>181</width>
-       <height>26</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">color: rgb(255, 255, 255);</string>
-     </property>
-    </widget>
     <widget class="QLineEdit" name="year_quta_change">
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>90</y>
+       <y>40</y>
        <width>181</width>
        <height>26</height>
       </rect>
@@ -1631,7 +1656,7 @@ QPushButton::hover{
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>180</y>
+       <y>260</y>
        <width>80</width>
        <height>26</height>
       </rect>
@@ -1656,7 +1681,7 @@ QPushButton::hover{
      <property name="geometry">
       <rect>
        <x>110</x>
-       <y>180</y>
+       <y>260</y>
        <width>80</width>
        <height>26</height>
       </rect>
@@ -1674,33 +1699,11 @@ QPushButton::hover{
       <string>Отмена</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_28">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>10</y>
-       <width>201</width>
-       <height>18</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">color: rgb(255, 255, 255);</string>
-     </property>
-     <property name="text">
-      <string>Годовой начисленный налог</string>
-     </property>
-    </widget>
     <widget class="QLabel" name="label_29">
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>70</y>
+       <y>15</y>
        <width>181</width>
        <height>18</height>
       </rect>
@@ -1722,7 +1725,7 @@ QPushButton::hover{
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>140</y>
+       <y>220</y>
        <width>181</width>
        <height>25</height>
       </rect>
@@ -1746,7 +1749,7 @@ QComboBox::on{
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>120</y>
+       <y>195</y>
        <width>171</width>
        <height>18</height>
       </rect>
@@ -1764,14 +1767,87 @@ QComboBox::on{
       <string>Год</string>
      </property>
     </widget>
+    <widget class="QLineEdit" name="year_tax_change">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>95</y>
+       <width>181</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_32">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>70</y>
+       <width>201</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Годовой исчисленный налог</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="sell_tax_change">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>160</y>
+       <width>181</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_34">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>135</y>
+       <width>181</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Оплаченные налоги</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
    </widget>
    <widget class="QLabel" name="label_11">
     <property name="geometry">
      <rect>
-      <x>1600</x>
+      <x>1700</x>
       <y>600</y>
-      <width>301</width>
-      <height>301</height>
+      <width>221</width>
+      <height>231</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -1781,6 +1857,28 @@ QComboBox::on{
      <string/>
     </property>
    </widget>
+   <zorder>label_11</zorder>
+   <zorder>tableView</zorder>
+   <zorder>tableView_2</zorder>
+   <zorder>tableView_3</zorder>
+   <zorder>label</zorder>
+   <zorder>close_btn</zorder>
+   <zorder>minimize_btn</zorder>
+   <zorder>label_2</zorder>
+   <zorder>label_3</zorder>
+   <zorder>label_4</zorder>
+   <zorder>label_5</zorder>
+   <zorder>label_6</zorder>
+   <zorder>label_7</zorder>
+   <zorder>groupBox</zorder>
+   <zorder>groupBox_2</zorder>
+   <zorder>groupBox_3</zorder>
+   <zorder>groupBox_create</zorder>
+   <zorder>groupBox_change</zorder>
+   <zorder>groupBox_create_2</zorder>
+   <zorder>groupBox_change_2</zorder>
+   <zorder>groupBox_create_3</zorder>
+   <zorder>groupBox_change_3</zorder>
   </widget>
  </widget>
  <resources/>

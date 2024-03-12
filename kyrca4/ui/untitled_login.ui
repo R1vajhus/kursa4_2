@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>551</width>
-    <height>271</height>
+    <height>241</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,7 +20,7 @@
       <x>0</x>
       <y>0</y>
       <width>551</width>
-      <height>271</height>
+      <height>241</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -198,39 +198,6 @@ QPushButton:hover{
     </property>
     <property name="text">
      <string>×</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="neighbor">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>230</y>
-      <width>251</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QPushButton{
-	background-color: 	#7289DA;
-	border-radius: 10px;
-	color: white;
-}
-QPushButton:hover{
-	background-color: 	#8E9EDA;
-}
-</string>
-    </property>
-    <property name="text">
-     <string>Гость</string>
     </property>
    </widget>
   </widget>

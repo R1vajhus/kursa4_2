@@ -14,13 +14,13 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(QtWidgets.QMainWindow):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(551, 271)
+        MainWindow.resize(551, 241)
         self.setWindowFlags(QtCore.Qt.FramelessWindowHint)
         self.setAttribute(QtCore.Qt.WA_TranslucentBackground)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(0, 0, 551, 271))
+        self.label.setGeometry(QtCore.QRect(0, 0, 551, 241))
         self.label.setStyleSheet("background-color: #323339;\n"
 "border-radius: 20px;")
         self.label.setText("")
@@ -101,23 +101,6 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
 "    border: none;\n"
 "}")
         self.exit.setObjectName("exit")
-        self.neighbor = QtWidgets.QPushButton(self.centralwidget)
-        self.neighbor.setGeometry(QtCore.QRect(20, 230, 251, 31))
-        font = QtGui.QFont()
-        font.setBold(True)
-        font.setWeight(75)
-        self.neighbor.setFont(font)
-        self.neighbor.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.neighbor.setStyleSheet("QPushButton{\n"
-"    background-color:     #7289DA;\n"
-"    border-radius: 10px;\n"
-"    color: white;\n"
-"}\n"
-"QPushButton:hover{\n"
-"    background-color:     #8E9EDA;\n"
-"}\n"
-"")
-        self.neighbor.setObjectName("neighbor")
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
@@ -130,4 +113,3 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
         self.label_3.setText(_translate("MainWindow", "Пароль:"))
         self.auth.setText(_translate("MainWindow", "Войти"))
         self.exit.setText(_translate("MainWindow", "×"))
-        self.neighbor.setText(_translate("MainWindow", "Гость"))

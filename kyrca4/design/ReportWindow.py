@@ -14,14 +14,14 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(QtWidgets.QMainWindow):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(800, 600)
+        MainWindow.resize(961, 600)
         MainWindow.setStyleSheet("")
         self.setWindowFlags(QtCore.Qt.FramelessWindowHint)
         self.setAttribute(QtCore.Qt.WA_TranslucentBackground)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(150, 20, 481, 41))
+        self.label.setGeometry(QtCore.QRect(240, 20, 481, 41))
         font = QtGui.QFont()
         font.setPointSize(30)
         font.setBold(True)
@@ -31,7 +31,7 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
         self.label.setAlignment(QtCore.Qt.AlignCenter)
         self.label.setObjectName("label")
         self.tableView = QtWidgets.QTableView(self.centralwidget)
-        self.tableView.setGeometry(QtCore.QRect(10, 90, 781, 321))
+        self.tableView.setGeometry(QtCore.QRect(10, 90, 941, 321))
         self.tableView.setStyleSheet("QTableView{\n"
 "    background-color:     #FFFFFF;\n"
 "    border: 2px outset     #23272A;\n"
@@ -42,7 +42,7 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
 "")
         self.tableView.setObjectName("tableView")
         self.start_date = QtWidgets.QComboBox(self.centralwidget)
-        self.start_date.setGeometry(QtCore.QRect(8, 450, 131, 26))
+        self.start_date.setGeometry(QtCore.QRect(18, 450, 131, 26))
         self.start_date.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.start_date.setStyleSheet("QComboBox{\n"
 "    border-radius: 5px;\n"
@@ -66,7 +66,7 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
 "}")
         self.start_date.setObjectName("start_date")
         self.end_date = QtWidgets.QComboBox(self.centralwidget)
-        self.end_date.setGeometry(QtCore.QRect(160, 450, 131, 26))
+        self.end_date.setGeometry(QtCore.QRect(170, 450, 131, 26))
         self.end_date.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.end_date.setStyleSheet("QComboBox{\n"
 "    border-radius: 5px;\n"
@@ -90,7 +90,7 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
 "}")
         self.end_date.setObjectName("end_date")
         self.label_2 = QtWidgets.QLabel(self.centralwidget)
-        self.label_2.setGeometry(QtCore.QRect(140, 454, 21, 16))
+        self.label_2.setGeometry(QtCore.QRect(150, 454, 21, 16))
         font = QtGui.QFont()
         font.setPointSize(15)
         font.setBold(True)
@@ -100,7 +100,7 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
         self.label_2.setAlignment(QtCore.Qt.AlignCenter)
         self.label_2.setObjectName("label_2")
         self.label_3 = QtWidgets.QLabel(self.centralwidget)
-        self.label_3.setGeometry(QtCore.QRect(10, 430, 131, 20))
+        self.label_3.setGeometry(QtCore.QRect(20, 430, 131, 20))
         font = QtGui.QFont()
         font.setPointSize(10)
         font.setBold(True)
@@ -110,7 +110,7 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
         self.label_3.setAlignment(QtCore.Qt.AlignCenter)
         self.label_3.setObjectName("label_3")
         self.label_4 = QtWidgets.QLabel(self.centralwidget)
-        self.label_4.setGeometry(QtCore.QRect(160, 430, 131, 20))
+        self.label_4.setGeometry(QtCore.QRect(170, 430, 131, 20))
         font = QtGui.QFont()
         font.setPointSize(10)
         font.setBold(True)
@@ -120,7 +120,7 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
         self.label_4.setAlignment(QtCore.Qt.AlignCenter)
         self.label_4.setObjectName("label_4")
         self.view_table = QtWidgets.QPushButton(self.centralwidget)
-        self.view_table.setGeometry(QtCore.QRect(10, 490, 281, 31))
+        self.view_table.setGeometry(QtCore.QRect(20, 490, 281, 31))
         font = QtGui.QFont()
         font.setPointSize(10)
         font.setBold(True)
@@ -139,7 +139,7 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
 "}")
         self.view_table.setObjectName("view_table")
         self.start_printer = QtWidgets.QPushButton(self.centralwidget)
-        self.start_printer.setGeometry(QtCore.QRect(10, 540, 281, 31))
+        self.start_printer.setGeometry(QtCore.QRect(20, 540, 281, 31))
         font = QtGui.QFont()
         font.setPointSize(10)
         font.setBold(True)
@@ -158,12 +158,12 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
 "}")
         self.start_printer.setObjectName("start_printer")
         self.label_5 = QtWidgets.QLabel(self.centralwidget)
-        self.label_5.setGeometry(QtCore.QRect(300, 410, 481, 181))
+        self.label_5.setGeometry(QtCore.QRect(420, 410, 471, 181))
         self.label_5.setStyleSheet("image: url(images/sleep);")
         self.label_5.setText("")
         self.label_5.setObjectName("label_5")
         self.exit = QtWidgets.QPushButton(self.centralwidget)
-        self.exit.setGeometry(QtCore.QRect(770, 0, 21, 20))
+        self.exit.setGeometry(QtCore.QRect(920, 10, 21, 20))
         font = QtGui.QFont()
         font.setPointSize(20)
         font.setBold(True)
@@ -177,7 +177,7 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
 "}")
         self.exit.setObjectName("exit")
         self.label_6 = QtWidgets.QLabel(self.centralwidget)
-        self.label_6.setGeometry(QtCore.QRect(0, 0, 801, 601))
+        self.label_6.setGeometry(QtCore.QRect(0, 0, 961, 601))
         self.label_6.setStyleSheet("color: rgb(255, 255, 255);\n"
 "background-color:     #323339;\n"
 "border-radius: 10px;")

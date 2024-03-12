@@ -29,16 +29,19 @@ class ReportWindow(Ui_MainWindow):
         self.tableView.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
         
         self.start_printer.clicked.connect(self.print_btn_cl)
+        self.table()
         
-        
+
     def table(self):
         query = QSqlQueryModel()
-        query.setQuery(f"SELECT salary, tax, EXTRACT(YEAR FROM year) AS employment_year, (tax - 0.12*salary) AS total_salary FROM job WHERE year BETWEEN '01.01.{self.start_date.currentText()}' AND '01.01.{self.end_date.currentText()}';")
+        query.setQuery(f"SELECT inn_citizen, inn_company, salary, tax, EXTRACT(YEAR FROM year) AS employment_year, taxes_paid FROM job WHERE year BETWEEN '01.01.{self.start_date.currentText()}' AND '01.01.{self.end_date.currentText()}' ORDER BY year;")
         self.tableView.setModel(query)
-        query.setHeaderData(0, Qt.Horizontal, "Сумма зарплаты")
-        query.setHeaderData(1, Qt.Horizontal, "Исчисляемые налоги")
-        query.setHeaderData(2, Qt.Horizontal, "Год")
-        query.setHeaderData(3, Qt.Horizontal, "Оплаченные налоги")
+        query.setHeaderData(0, Qt.Horizontal, "ИНН гражданина")
+        query.setHeaderData(1, Qt.Horizontal, "ИНН предприятия")
+        query.setHeaderData(2, Qt.Horizontal, "Сумма зарплаты")
+        query.setHeaderData(3, Qt.Horizontal, "Исчисляемые налоги")
+        query.setHeaderData(4, Qt.Horizontal, "Год")
+        query.setHeaderData(5, Qt.Horizontal, "Оплаченные налоги")
         
     def mousePressEvent(self, event):
         self.offset = event.pos()
@@ -67,22 +70,42 @@ class ReportWindow(Ui_MainWindow):
                 textDoc.print(printer)
             
     def build_document(self):
+        model = self.tableView.model()
+        row_count = model.rowCount()
+        column_count = model.columnCount()
+        
+        total = 0
+        column_index = 5
+        
+        total2 = 0
+        column_index2 = 3# индекс столбца, который нужно сложить
+
+        # Проход по всем строкам и сложение значений столбца
+        for row in range(model.rowCount()):
+            index = model.index(row, column_index)
+            total += float(index.data())
+        print(total)
+            
+        for row in range(model.rowCount()):
+            index = model.index(row, column_index2)
+            total2 += float(index.data())
+        print(total2)
+            
         html = f"""<h1 style='text-align: center;'>Отчет</h1>
-              <h3 style='text-align: center; margin-bottom: 100px'>Оплаченные налоги за период с {self.start_date.currentText()} по {self.end_date.currentText()}</h3>
+              <h3 style='text-align: center; margin-bottom: 100px'>Оплаченные налоги за период с {self.start_date.currentText()} по {self.end_date.currentText()} год.</h3>
               <table style='text-align: center; margin: auto; border-collapse: collapse;'>
               <thead>
               <tr>
-                  <th style='border: 1px solid black; width: 100px;'>Сумма зарплаты</th>
-                  <th style='border: 1px solid black; width: 100px;'>Исчисляемые налоги</th>
+                <th style='border: 1px solid black; width: 100px;'>ИНН гражданина</th>
+                  <th style='border: 1px solid black; width: 100px;'>ИНН предприятия</th>
+                  <th style='border: 1px solid black; width: 100px;'>Сумма зарплаты(₽)</th>
+                  <th style='border: 1px solid black; width: 100px;'>Исчисленные налоги(₽)</th>
                   <th style='border: 1px solid black; width: 100px;'>Год</th>
-                  <th style='border: 1px solid black; width: 100px;'>Оплаченные налоги</th>
+                  <th style='border: 1px solid black; width: 100px;'>Оплаченные налоги(₽)</th>
               </tr>
               </thead>
               <tbody>"""
 
-        model = self.tableView.model()
-        row_count = model.rowCount()
-        column_count = model.columnCount()
 
         for row in range(row_count):
             html += "<tr>"
@@ -94,6 +117,17 @@ class ReportWindow(Ui_MainWindow):
                 html += f"<td style='border: 1px solid black; width: 100px;'>{int(data)}</td>"
             html += "</tr>"
 
+        html += f"""<tr>
+                <td colspan="6"; style='width: 100px;text-align: left;'></td>
+              </tr>
+              <tr>
+                <td colspan="5"; style='border: 1px solid black; width: 100px;text-align: left;'>Сумма всех оплаченных налогов:</td>
+                <td style='border: 1px solid black; width: 100px;text-align: left;'>{int(total)}₽</td>
+              </tr>
+              <tr>
+                <td colspan="5"; style='border: 1px solid black; width: 100px;text-align: left;'>Сумма всех исчисленных налогов:</td>
+                <td style='border: 1px solid black; width: 100px;text-align: left;'>{int(total2)}₽</td>
+              </tr>"""
         html += "</tbody></table>"
 
         document = QTextDocument()
