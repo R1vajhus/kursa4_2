@@ -11,6 +11,7 @@ class Tables:
 
         self.table_1()
         self.table_2()
+        self.updateInvoice()
         
         self.animation = AnimationButtons(self)
         
@@ -21,10 +22,15 @@ class Tables:
         self.mainwindow.tableView.horizontalHeader().setSectionResizeMode(1, QHeaderView.Stretch)
         self.mainwindow.tableView.horizontalHeader().setSectionResizeMode(0, QHeaderView.ResizeToContents)
         self.mainwindow.tableView.horizontalHeader().setSectionResizeMode(2, QHeaderView.ResizeToContents)
+        
         self.mainwindow.tableView_2.horizontalHeader().setSectionResizeMode(1, QHeaderView.Stretch)
         self.mainwindow.tableView_2.horizontalHeader().setSectionResizeMode(0, QHeaderView.ResizeToContents)
         self.mainwindow.tableView_2.horizontalHeader().setSectionResizeMode(2, QHeaderView.ResizeToContents)
-        self.mainwindow.tableView_3.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
+        
+        self.mainwindow.tableView_3.horizontalHeader().setSectionResizeMode(3, QHeaderView.Stretch)
+        self.mainwindow.tableView_3.horizontalHeader().setSectionResizeMode(4, QHeaderView.ResizeToContents)
+        self.mainwindow.tableView_3.horizontalHeader().setSectionResizeMode(5, QHeaderView.ResizeToContents)
+        self.mainwindow.tableView_3.horizontalHeader().setSectionResizeMode(6, QHeaderView.ResizeToContents)
         
         self.mainwindow.tableView.hideColumn(3)
         self.mainwindow.tableView_2.hideColumn(3)
@@ -34,17 +40,17 @@ class Tables:
         self.query1 = QSqlQueryModel()
         self.query1.setQuery("SELECT * FROM citizen ORDER BY inn")
         self.mainwindow.tableView.setModel(self.query1)
-        self.query1.setHeaderData(0, Qt.Horizontal, "ИНН гражд.")
-        self.query1.setHeaderData(1, Qt.Horizontal, "ФИО")
-        self.query1.setHeaderData(2, Qt.Horizontal, "Дом. адрес")
+        self.query1.setHeaderData(0, Qt.Horizontal, "ИНН гражданина")
+        self.query1.setHeaderData(1, Qt.Horizontal, "Фамилия Имя Отчество")
+        self.query1.setHeaderData(2, Qt.Horizontal, "Домашний адрес")
         
     def table_2(self):
         self.query2 = QSqlQueryModel()
         self.query2.setQuery("SELECT * FROM company ORDER BY inn")
         self.mainwindow.tableView_2.setModel(self.query2)
-        self.query2.setHeaderData(0, Qt.Horizontal, "ИНН пред.")
-        self.query2.setHeaderData(1, Qt.Horizontal, "Название")
-        self.query2.setHeaderData(2, Qt.Horizontal, "Адрес пред.")
+        self.query2.setHeaderData(0, Qt.Horizontal, "ИНН предприятия")
+        self.query2.setHeaderData(1, Qt.Horizontal, "Название предприятия")
+        self.query2.setHeaderData(2, Qt.Horizontal, "Адрес предприятия")
         
 #* # # # # # # # # # # # # # # # ADD DATA # # # # # # # # # # # # # # # # 
     def table_add_1(self):
@@ -123,7 +129,12 @@ class Tables:
             self.mainwindow.groupBox_create_3.hide()
         else:
             message = QMessageBox()
-            message.critical(self.mainwindow, 'Ошибка!', 'Введите коректные данные!')
+            if not self.mainwindow.tableView.selectedIndexes():
+                message.critical(self.mainwindow, 'Ошибка!', 'Выделите гражданина!')
+            elif not self.mainwindow.tableView_2.selectedIndexes():
+                message.critical(self.mainwindow, 'Ошибка!', 'Выделите предприятие!')
+            elif not self.mainwindow.tableView_2.selectedIndexes() and not self.mainwindow.tableView.selectedIndexes():
+                message.critical(self.mainwindow, 'Ошибка!', 'Выделите гражданина и предприятие!')
         try:
             last_inserted_id = query.lastInsertId()
             for row in range(self.model.rowCount()):
@@ -255,10 +266,10 @@ class Tables:
         self.mainwindow.tableView_3.hideColumn(0)
         self.mainwindow.tableView_3.hideColumn(1)
         self.mainwindow.tableView_3.hideColumn(2)
-        self.model.setHeaderData(3, Qt.Horizontal, "Сумма зарплаты")
-        self.model.setHeaderData(4, Qt.Horizontal, "Исч. налоги")
+        self.model.setHeaderData(3, Qt.Horizontal, "Годовая сумма зарплаты")
+        self.model.setHeaderData(4, Qt.Horizontal, "Годовой исчисленный налог")
         self.model.setHeaderData(5, Qt.Horizontal, "Год")
-        self.model.setHeaderData(6, Qt.Horizontal, "Опл. налоги")
+        self.model.setHeaderData(6, Qt.Horizontal, "Оплаченные налоги")
         self.mainwindow.tableView_3.selectRow(0)
         self.mainwindow.on_selection_changed_3()
         

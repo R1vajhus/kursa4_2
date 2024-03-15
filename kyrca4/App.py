@@ -66,8 +66,6 @@ class MainWindow(Ui_MainWindow):
         
         self.close_btn.clicked.connect(self.close)
         self.minimize_btn.clicked.connect(self.showMinimized)
-
-        self.horizontalHeader = self.tableView.horizontalHeader()
         
         self.amain = AnimationButtons(self)
         self.tables = Tables(self)
